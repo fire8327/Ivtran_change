@@ -293,6 +293,41 @@ h1,h2,h3,h4,h5,h6,p {
     color: #39444F;
 }
 
+
+/* Галерея */
+.gallery {
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.gallery img {
+    object-fit: cover;
+    height: auto;
+    flex-grow: 1;
+    max-height: 337px;
+}
+
+.gallery img:nth-child(1), 
+.gallery img:nth-child(4), 
+.gallery img:nth-child(7), 
+.gallery img:nth-child(10) {
+    width: 25.5%;
+}
+
+.gallery img:nth-child(2), 
+.gallery img:nth-child(3), 
+.gallery img:nth-child(6), 
+.gallery img:nth-child(8), 
+.gallery img:nth-child(9) {
+    width: 13.5%;
+}
+
+.gallery img:nth-child(5) {
+    width: 17%;
+}
+
 @media (max-width: 1624px) {
     .for-client {
         width: 100%;
@@ -305,6 +340,38 @@ h1,h2,h3,h4,h5,h6,p {
     /* Наша пользя для клиентов */
     .for-client__inner {
         gap: 50px
+    }
+}
+
+@media (max-width: 1280px) {
+    /* Галерея */
+    .gallery {
+        margin-top: 80px;
+    }
+
+    .gallery img {
+        max-height: 274px;
+    }
+    .gallery img:nth-child(1),
+    .gallery img:nth-child(10) {
+        width: 45%;
+    }
+
+    .gallery img:nth-child(2), 
+    .gallery img:nth-child(3), 
+    .gallery img:nth-child(8), 
+    .gallery img:nth-child(9) {
+        width: 25%;
+    }
+
+    .gallery img:nth-child(4),
+    .gallery img:nth-child(7) {
+        width: 30%;
+    }
+
+    .gallery img:nth-child(5),
+    .gallery img:nth-child(6) {
+        width: 16%;
     }
 }
 
@@ -453,6 +520,7 @@ h1,h2,h3,h4,h5,h6,p {
         gap: 20px;
     }
 
+
 }
 
 @media (max-width: 640px) {
@@ -468,9 +536,41 @@ h1,h2,h3,h4,h5,h6,p {
         height: 224px;
     }
 
+     
     /* Наша польза для клиентов */
     .for-client {
         padding: 0 20px 0 40px;
+    }
+
+    
+    /* Галерея */
+    .gallery {
+        gap: 12px;
+    }
+
+    .gallery img {
+        max-height: 185px;
+    }
+    .gallery img:nth-child(1),
+    .gallery img:nth-child(10) {
+        width: 40%;
+    }
+
+    .gallery img:nth-child(2), 
+    .gallery img:nth-child(3), 
+    .gallery img:nth-child(8), 
+    .gallery img:nth-child(9) {
+        width: 20%;
+    }
+
+    .gallery img:nth-child(4),
+    .gallery img:nth-child(7) {
+        width: 25%;
+    }
+
+    .gallery img:nth-child(5),
+    .gallery img:nth-child(6) {
+        width: 16%;
     }
 }
 @media (max-width: 580px) {
@@ -560,6 +660,38 @@ h1,h2,h3,h4,h5,h6,p {
     .about-numbers {
         margin-top: 60px;
         padding: 60px 0;
+    }
+
+
+    /* Галерея */
+    .gallery {
+        gap: 5px;
+        margin-top: 36px;
+    }
+
+    .gallery img {
+        max-height: 92px;
+    }
+    .gallery img:nth-child(1),
+    .gallery img:nth-child(10) {
+        width: 40%;
+    }
+
+    .gallery img:nth-child(2), 
+    .gallery img:nth-child(3), 
+    .gallery img:nth-child(8), 
+    .gallery img:nth-child(9) {
+        width: 20%;
+    }
+
+    .gallery img:nth-child(4),
+    .gallery img:nth-child(7) {
+        width: 25%;
+    }
+
+    .gallery img:nth-child(5),
+    .gallery img:nth-child(6) {
+        width: 16%;
     }
     
 }
