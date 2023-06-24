@@ -19,4 +19,3 @@ $(".tab_accordion").click(function () {
     $("ul.tabs li").removeClass("active");
     $("ul.tabs li[rel^='" + d_activeTab + "']").addClass("active");
 });
-$('ul.tabs li').last().addClass("tab_last");

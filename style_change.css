@@ -147,9 +147,13 @@ h1,h2,h3,h4,h5,h6,p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 148px;
+    height: 128px;
     padding: 16px 24px;
     box-sizing: border-box;
+}
+
+.postulates_bottom h3 {
+    line-height: 32px;
 }
 
 .postulates__list-name {
@@ -162,7 +166,7 @@ h1,h2,h3,h4,h5,h6,p {
     font-size: 16px;
     text-align: center;
     color: #39444F;
-    line-height: 1.3;
+    line-height: 24px;
     margin-top: 8px;
 }
 
@@ -248,11 +252,10 @@ h1,h2,h3,h4,h5,h6,p {
     width: 1240px;
     margin: 0 auto;
     box-sizing: border-box;
-    margin-top: 88px;
 }
 
 .about-numbers {
-    margin-top: 68px;
+    margin-top: 30px;
     padding: 88px 0;
     background: linear-gradient(180deg, rgba(246, 248, 255, 0.45) 0%, #F6F8FF 100%);
 }
@@ -336,6 +339,7 @@ h1,h2,h3,h4,h5,h6,p {
     width: 1240px;
     margin-top: 88px;
     box-sizing: border-box;
+    position: relative;
 }
  
 .tabs {
@@ -345,6 +349,16 @@ h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.line {
+    height: 1px;
+    width: 612px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #CED0E7;
+    position: absolute;
+    top: 50px;
 }
  
 .tabs li {
@@ -498,6 +512,11 @@ h1,h2,h3,h4,h5,h6,p {
         gap: 30px
     }
 
+    /* Постулаты */
+    .postulates_bottom {
+        padding: 16px 8px;
+    }
+
     /* Наша пользя для клиентов */
     .for-client {
         width: 100%;
@@ -568,18 +587,8 @@ h1,h2,h3,h4,h5,h6,p {
         margin-top: 80px;
     }
 
-    .postulates__list {
-        grid-template-columns: repeat(2, 1fr);
-        justify-items: center;
-    }
-
-    .postulates__list-item {
-        width: 100%;
-    }
-
-    .postulates__list-item:nth-child(3) {
-        grid-column: span 2;
-        width: 50%;
+    .postulates_bottom {
+        padding: 16px 8px;
     }
 
 
@@ -652,6 +661,22 @@ h1,h2,h3,h4,h5,h6,p {
         height: 224px;
     }
 
+
+    /* Постулаты */
+    .postulates__list {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .postulates__list-item {
+        width: 100%;
+    }
+
+    .postulates__list-item:nth-child(3) {
+        grid-column: span 2;
+        width: 50%;
+    }
+
      
     /* Наша польза для клиентов */
     .for-client {
@@ -695,6 +720,10 @@ h1,h2,h3,h4,h5,h6,p {
         column-gap: 8px;
     }
 
+    .line {
+        width: 600px;
+    }
+
     .tab_content {
         gap: 12px;
     }
@@ -726,6 +755,10 @@ h1,h2,h3,h4,h5,h6,p {
         border-radius: 20px;
         box-shadow: 0px 4px 24px 0px rgba(151, 154, 192, 0.15), 0px -2px 4px 0px rgba(151, 154, 192, 0.10);
         margin-bottom: 16px;
+    }
+
+    .line {
+        display: none;
     }
 
     .tabs-item__right, .tabs-item__bottom {
@@ -844,6 +877,10 @@ h1,h2,h3,h4,h5,h6,p {
     .postulates {
         padding: 60px 0;
         margin-top: 60px;
+    }
+
+    .postulates_bottom {
+        padding: 16px 24px;
     }
 
     .postulates__title {
