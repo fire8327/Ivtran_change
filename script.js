@@ -46,6 +46,8 @@ const swiper = new Swiper('.swiper', {
 let timelineSwiper = new Swiper ('.swiper-container', {
     loop: false,
     speed: 1600,
+    slidesPerView: 1,
+    spaceBetween: 20,
     pagination: '.swiper-pagination',
     paginationBulletRender: function (swiper, index, className) {
       let year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
