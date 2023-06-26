@@ -43,15 +43,15 @@ const swiper = new Swiper('.swiper', {
 });
 
 
-let timelineSwiper = new Swiper ('.timeline .swiper-container', {
+let timelineSwiper = new Swiper ('.swiper-container', {
     loop: false,
     speed: 1600,
     pagination: '.swiper-pagination',
     paginationBulletRender: function (swiper, index, className) {
       let year = document.querySelectorAll('.swiper-slide')[index].getAttribute('data-year');
-      return '<span class="' + className + '">' + year + '</span>';
+      return '<span style="padding-top: 16px;" class="' + className + '">' + year + '</span>';
     },
     paginationClickable: true,
-    nextButton: '.swiper-button-next',
-    prevButton: '.swiper-button-prev',
-  });
+    nextButton: '.swiper-next',
+    prevButton: '.swiper-prev',
+});
