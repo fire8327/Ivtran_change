@@ -213,6 +213,13 @@ body,h3,p {
         box-sizing: border-box;
     }
     
+    .swiper-pagination::after {
+        width: 100%;
+    }
+
+    .swiper-pagination {
+        gap: 50px;
+    }
 }
 
 @media (max-width: 900px) {
@@ -310,6 +317,7 @@ body,h3,p {
 
     .swiper-descr__desc {
         margin-top: 20px;
+        width: 85%;
     }
 
     .swiper-pagination {
@@ -369,11 +377,30 @@ body,h3,p {
         padding: 0 10px ;
     }
 
+    .swiper-container {
+        padding-bottom: 42px;
+    }
+
     .timeline-wrapper {
         width: 70%;
     }
 
     .swiper-pagination {
         width: 30%;
+    }
+
+    .swiper__img img {
+        border-top-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
+
+    .swiper-descr {
+        margin-top: 20px;
+    }
+
+    .swiper-descr__desc {
+        margin-top: 16px;
+        margin-bottom: 0;
+        width: 100%;
     }
 }
