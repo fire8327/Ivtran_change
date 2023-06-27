@@ -11,11 +11,11 @@ $("ul.tabs li").click(function () {
     $(".tab_accordion[rel^='" + activeTab + "']").addClass("d_active");
 });
 $(".dropdown").each((i,el) => { 
-    let list =  $(el).find('.tab_content2');
+    let list =  $(el).find('.dropdown-list');
     let img = $(el).find('.dropdown-img');
     let dropdown = $(el).find('.dropdown-toggler');
     dropdown.click(() => {
-        list.slideToggle('fast');
+        list.slideToggle(500);
         img.toggleClass("rotate-180");
         dropdown.toggleClass("active");
     });
