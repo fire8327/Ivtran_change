@@ -18,6 +18,5 @@ $(".dropdown").each((i,el) => {
         list.slideToggle('fast');
         img.toggleClass("rotate-180");
         dropdown.toggleClass("active");
-        list.toggleClass('hidden');
     });
 });
