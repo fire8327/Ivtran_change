@@ -381,7 +381,7 @@ button {
 
 /* Наш транспорт */
 .hidden {
-    display: none !important;
+    display: none;
 }
 
 .rotate-180 {
